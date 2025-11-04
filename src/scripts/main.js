@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.page__menu');
   const burger = document.querySelector('.top-bar__burger');
   const closeBtn = document.querySelector('.menu__close');
-  const navLinks = document.querySelector('.menu__nav .nav__link');
+  const navLinks = document.querySelectorAll('.menu__nav .nav__link');
 
   const openMenu = () => {
     menu.classList.add('active');
@@ -33,14 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
     closeMenu();
   });
 
-  navLinks.forEach((link) => link.addEventListener('click', closeMenu()));
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.menu__nav .nav__link');
-
   navLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', () => {
+      closeMenu();
+
       navLinks.forEach((l) => l.classList.remove('active'));
       link.classList.add('active');
     });
