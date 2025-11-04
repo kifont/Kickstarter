@@ -2,11 +2,22 @@
 @import 'fonts';
 @import 'typography';
 @import 'header';
+@import 'menu';
+@import 'functions';
+@import 'block';
+@import 'section';
+@import 'quote';
+@import 'features';
+@import 'questions';
+@import 'footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: $bg-color;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   margin: 0;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }

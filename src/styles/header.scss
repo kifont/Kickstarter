@@ -1,4 +1,5 @@
-.header {
+/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+header {
   display: flex;
   flex-direction: column;
 }
@@ -146,6 +147,11 @@
 
     @include on-tablet {
       order: 0;
+      max-width: 340px;
+    }
+
+    @include on-desktop {
+      max-width: 380px;
     }
   }
 
@@ -154,6 +160,7 @@
       font-size: 48px;
       font-weight: 700;
       line-height: 62px;
+      color: $text-color-main;
     }
 
     @include on-desktop {
@@ -177,6 +184,7 @@
 
   @include on-tablet {
     flex-direction: row;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     flex-wrap: nowrap;
     gap: 19px;
     justify-content: center;
@@ -198,8 +206,11 @@
     object-fit: contain;
 
     @include on-tablet {
-      width: min(420px, 100%);
-      max-width: 100%;
+      max-width: 430px;
+    }
+
+    @include on-desktop {
+      max-width: 816px;
     }
   }
 }
