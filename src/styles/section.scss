@@ -22,11 +22,11 @@
 
   &__text {
     @include secondary-text;
+    font-size: 16px;
 
     color: $default-color-text;
 
     @include on-tablet {
-      font-size: 16px;
       line-height: 24px;
       margin: 0 0 30px;
     }

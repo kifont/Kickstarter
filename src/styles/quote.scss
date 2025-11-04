@@ -7,7 +7,7 @@
   padding-inline: 0;
   padding-bottom: 110px;
 
-  background-image: url('/src/images/icons/quotes.png');
+  background-image: url('/src/images/icons/quotes.webp');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 208px 171px;
@@ -17,7 +17,7 @@
     padding-top: 50px;
     padding-bottom: 30px;
     @include quote;
-  
+
     text-align: center;
     max-width: 260px;
   }

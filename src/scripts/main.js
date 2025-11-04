@@ -1,10 +1,10 @@
 'use strict';
 
-const form = document.querySelector('.questions__from');
+const form = document.querySelector('.questions__form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  this.reset();
+  form.reset();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
