@@ -2,8 +2,8 @@
 
 const form = document.querySelector('.questions__from');
 
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   this.reset();
 });
 

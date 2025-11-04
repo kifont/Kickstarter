@@ -30,6 +30,7 @@
     padding: 0 16px;
     box-sizing: border-box;
     background-color: $light-blue-color;
+    margin-inline: -30px;
   }
 
   &__item {
@@ -77,6 +78,7 @@
       grid-template-columns: repeat(2, 1fr);
       padding-left: 90px;
       position: relative;
+      margin-inline: 0;
     }
 
     &__item {
